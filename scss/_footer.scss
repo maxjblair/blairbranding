@@ -1,0 +1,55 @@
+.global-footer {
+    background-color: rgba(244,244,244,1);
+    border-top: 5px solid #ddd;
+    color: $dark-gray;
+    font-size: $font-size-sm;
+    letter-spacing: 0px;
+    line-height: 24px;
+    margin: 0 -15px;
+    padding: $margin-md 0 $margin-sm;
+    &__right {
+        margin-top: $margin-md;
+        & ul {
+            list-style-type: none;
+            margin-bottom: $margin-md;
+            overflow: hidden;
+            padding-inline-start: 0;
+            & li {
+                float: left;
+                margin-right: $margin-md;
+                & i {
+                    font-size: $font-size-xxl;
+                }
+            }
+        }
+        p {
+            line-height: 1.3rem;
+            margin-bottom: 0;
+            a {
+                color: $dark-gray;
+            }
+        }
+    }
+
+}
+
+@include respond-above(sm) {
+    .global-footer {
+        .row {
+            margin-left: $margin-md;
+            margin-right: $margin-md;
+        }
+        &__right {
+            margin-top: 0;
+            text-align: right;
+            ul {
+                margin-bottom: $margin-xs;
+                li {
+                    float: right;
+                    margin-left: $margin-md;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

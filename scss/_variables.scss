@@ -1,0 +1,41 @@
+// Global Variables //
+
+/********** GOOGLE FONT **********/
+@import url(https://fonts.googleapis.com/css?family=B612&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Overpass+Mono&display=swap);
+
+/********** VARIABLES **********/
+$black:                 #000;
+$light-gray:            #f4f4f4;
+$medium-gray:           #c4c4c4;
+$dark-gray:             #58595B;
+$logo-yellow:           #E8D323;
+$white:                 #fff;
+$light-border:          #ddd;
+
+$font-size-xs:          .7rem;
+$font-size-sm:          .8rem;
+$font-size-md:          .9rem;
+$font-size-lg:          1rem;
+$font-size-xl:          1.5rem;
+$font-size-xxl:         2.0rem;
+
+$font-family-Verdana:   Verdana, Geneva, Tahoma, sans-serif;
+$font-family-B612:      'B612',sans-serif;
+$font-family-Overpass:  'Overpass Mono', monospace;
+$font-bold:             700;
+
+$margin-xs:             .5rem;
+$margin-sm:             1rem;
+$margin-md:             2rem;
+$margin-lg:             2.5rem;
+$margin-xl:             4rem;
+
+/********** SCREEN SIZES **********/
+// A map of breakpoints
+$breakpoints: (
+    xs: 576px,
+    sm: 768px,
+    md: 992px,
+    lg: 1200px
+);

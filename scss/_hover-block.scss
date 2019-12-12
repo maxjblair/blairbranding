@@ -1,0 +1,145 @@
+/********** Block Hover **********/
+.hover-block-row {
+    overflow: hidden;
+}
+
+.bb-hover-block {
+    position: relative;
+    width: 100%;
+  
+    &:before {
+        @media (min-width: 30rem) {
+            display: block;
+            content: '';
+            margin: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            height: 45%;
+            width: 25%;
+            z-index: 2;
+        }
+    }
+  
+    img {
+        width: 100%;
+    }
+    &--left:before {
+        @media (min-width: 48rem) {
+            background: url('../img/ampersand-left.png') right center no-repeat;
+            background-size: contain;
+            right: 0;
+        }
+    }
+    &--right:before {
+        @media (min-width: 48rem) {
+            background: url('../img/ampersand-right.png') left center no-repeat;
+            background-size: contain;
+            left: 0;
+        }
+    }
+}
+
+.bb-hover-block {
+    background-size: contain;
+    position: relative;
+    a {
+        bottom: 0;
+        display: block;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    &__content,
+    &__foreground {
+        align-items: center;
+        bottom: 0;
+        display: flex;
+        flex: 1 0 auto;
+        justify-content: center;
+        left: 0;
+        margin: auto;
+        opacity: 1;
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    &__content {
+        @media (min-width: 30rem) {
+            background-size: contain;
+        }
+    }
+  
+    &__foreground {
+        background: center center no-repeat;
+        background-size: cover;
+        z-index: 1;
+    }
+}
+  
+body:not(.is-touch-device) .bb-hover-block:hover,
+body.is-touch-device .bb-hover-block.module-open {
+    .bb-hover-block__foreground,
+    .bb-hover-block__content {
+        top: 100%;  
+        transition: 500ms top ease-in;
+   }
+}
+
+.bb-hover-block__ {
+    &content {
+        &:before {
+            background-color: rgba(0,0,0,0.7);
+            bottom: 0;
+            content: '';
+            display: block;
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 2;
+        }
+        &-inner {
+            margin: 0 auto;
+            position: relative;
+            width: 95%;
+            z-index: 3;
+            @media (min-width: 48rem) {
+                width: 90%;
+            }
+        }
+    }
+  
+    &heading,
+    &subheading {
+        color: $white;
+        line-height: 1.2;
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &heading {
+        margin-bottom: $margin-xs;
+    }
+    &subheading {  
+        &:after {
+            @media (min-width: 48rem) {
+                display: block;
+                content: 'View Portfolio';
+                margin-top: 1rem;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+ 
+.mobile-no-padding.be-no-space .no-background .be-custom-column-inner {
+    @media (min-width: 48rem) {
+        padding: 0 !important;
+    }
+}

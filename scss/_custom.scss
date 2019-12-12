@@ -1,0 +1,284 @@
+/********** FONT **********/
+body {
+    font-family: $font-family-B612;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: $font-bold;
+}
+
+.lower {
+    text-transform: lowercase;
+}
+.upper {
+    text-transform: uppercase;
+}
+
+/********** BUTTONS **********/
+.btn-yellow {
+    background-color: $white;
+    border: 2px solid $logo-yellow;
+    color: $logo-yellow;
+    font-size: $font-size-lg;
+    font-weight: bold;
+}
+
+/********** LAYOUTS **********/
+.center-row-single {
+    text-align: center;
+}
+
+.row-max {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/********** MARGINS **********/
+.bottom-margin- {
+    &md {
+        margin-bottom: $margin-md;
+    }
+    &lg {
+        margin-bottom: $margin-lg;
+    }
+    &xl {
+        margin-bottom: $margin-xl;
+    }
+}
+
+.left-right-margin-normal {
+    margin-left: $margin-sm;
+    margin-right: $margin-sm;
+}
+
+p + h2 {
+    margin-top: $margin-xl;
+}
+
+.no-bottom-margin {
+    margin-bottom: 0;
+}
+
+/********** MISCELLANEOUS **********/
+.clearfix {
+    *zoom: 1;   /* IE 7 Hack */
+    &:before,
+    &:after {
+        content: "  ";
+        display: table;
+    }
+}
+
+/********** HOME PAGE **********/
+/********** NAVIGATION **********/
+.navbar {
+    border-bottom: 2px solid $dark-gray;
+    width: 100%;
+    .navbar-toggler {
+        border-color: rgba(0,0,0,.1);
+        &:focus {
+            outline: 5px auto $logo-yellow;
+        }
+    }
+    .navbar-brand {
+        margin-left: -12px;
+        @include respond-above(lg) {
+            width: 300px;
+        }
+    }
+    .navbar-collapse {
+        border-top: 1px solid $logo-yellow;
+        margin-left: -16px;
+        margin-right: -16px;
+        padding: 0 15px;
+        @include respond-above(md) {
+            border-top: none;
+            justify-content: center;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .navbar-nav {
+            margin-left: -15px;
+            margin-right: -15px;
+            li {
+                border-bottom: 1px solid #efefef;
+                padding-left: 15px;
+                padding-right: 15px;
+                @include respond-above(md) {
+                    border-bottom: none;
+                }
+            }
+            li:first-child {
+                @include respond-above(md) {
+                    padding-left: 0;
+                }
+            }
+            li:last-child {
+                border-bottom: none;
+                @include respond-above(md) {
+                    padding-right: 0;
+                }
+            }
+            .nav-link {
+                color: $dark-gray;
+            }
+        }
+    }
+}
+
+.page-banner {
+    a {
+        color: $dark-gray;
+        font-family: $font-family-B612;
+        font-size: $font-size-md;
+        font-weight: bold;
+/*        line-height: 85px; */
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &_nav {
+        & ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            margin-bottom: 0;
+            padding-left: 0;
+            & li {
+                float: left;
+                margin-left: $margin-xl;
+                text-transform: uppercase;
+                a {
+                    font-size: $font-size-sm;
+                }
+            }
+            & li:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+    &__contact {
+        align-items: center;
+        display: none;
+        font-family: $font-family-B612;
+        font-size: $font-size-lg;
+        font-weight: bold;
+        padding-right: 0;
+        text-align: right;
+        @include respond-above(md) {
+            max-width: 300px;
+        }
+        a {
+            color: $logo-yellow;
+            flex: 1;
+            font-size: $font-size-lg;
+        }
+        & .btn {
+            flex: 0;
+            margin-left: $margin-lg;
+            &:hover {
+                background-color: $logo-yellow;
+                color: $dark-gray;
+            }
+        }
+        @include respond-above(md) {
+           display: flex;
+        }
+    }
+}
+
+.hero-section {
+    padding: 0;
+    margin: 0;
+    max-height: 634px;
+    overflow: hidden;
+    .carousel {
+        max-height: inherit;
+        &-inner {
+            max-height: inherit;
+            .carousel-item {
+                max-height: inherit;
+                .carousel-caption {
+                    background-color: rgba(0, 0, 0, 0.4);
+                    bottom: 0;
+                    left: 0;
+                    padding: 10px $margin-sm 0;
+                    right: 0;
+                    text-align: left;
+                    @include respond-above(md) {
+                        padding: 10px $margin-xl 0;
+                    }
+                    h5 {
+                        margin-bottom: 0;
+                        @include respond-above(md) {
+                            font-size: 4rem;
+                        }
+                    }
+                    p {
+                        margin-bottom: .2rem;
+                    }
+                    a {
+                        color: $logo-yellow;
+                        font-size: $font-size-lg;
+                        text-decoration: none;
+                        @include respond-above(md) {
+                            font-size: $font-size-xl;
+                        }                    
+                    }
+                }
+            }
+        }
+        .carousel-indicators {
+            display: none;
+        }
+        .carousel-control-prev {
+            justify-content: flex-start;
+        }
+        .carousel-control-next {
+            justify-content: flex-end;
+        }
+        .carousel-indicators {
+            justify-content: flex-start;
+            margin-left: 3%;
+        }
+    }
+}
+
+/********** Homepage Scroll Section **********/
+.bb-logo-hdr {
+    display: inline-block;
+}
+
+.bb-logo-headline {
+    margin-bottom: 22px;
+    &:after {
+        background: $white url(../img/logo-sm.png) center center no-repeat;
+        background-size: contain;
+        border-left: 20px solid $white;
+        border-right: 20px solid $white;
+        content: '';
+        display: block;
+        height: 40px;
+        left: 0;
+        margin: auto;
+        right: 0;
+        width: 65px;
+        position: absolute;
+    }
+}
+
+.bb-logo-hdr:after {
+    background-color: $medium-gray;
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+}
+
+/********** Owl Carousel **********/
+.bb-owl-carousel-item {
+    margin: 0 auto;
+    width: 100px;
+}
