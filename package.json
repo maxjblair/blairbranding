@@ -1,0 +1,24 @@
+{
+  "name": "projectone",
+  "version": "1.0.1",
+  "description": "Test Project - Sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:compile": "node-sass styles.scss css/styles.css --output-style compressed",
+    "minifyJS": "uglifyJS main.js --compress --mangle --warn --output main.min.js"
+  },
+  "keywords": [
+    "Test"
+  ],
+  "author": "Max Blair",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.13.0",
+    "owl.carousel": "^2.3.4",
+    "uglify-js": "^3.7.2"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2"
+  }
+}
