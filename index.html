@@ -18,14 +18,244 @@
     <!-- Latest compiled Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+    <!-- Font Awesome -->
+    <link href="node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+
     <title>Blair Branding</title>
 
 </head>
 <body>
 <div class="container-fluid">
     <div class="row page-banner">
-        Blair Branding
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" class="d-inline-block align-top" alt="Blair Branding">
+            </a>
+            <!--a class="navbar-brand" href="#">Navbar</a-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Who We Are</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">What We Do</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Press</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 page-banner__contact">
+                <a id="page-banner__phone" href="tel:+1-651-442-0980">+1 (651) 442-0980</a>
+                <button class="btn btn-yellow">Email</button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="row bottom-margin-xl">
+        <div class="col-12 hero-section">
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/hero-1a.jpg" alt="First slide">
+                        <div class="carousel-caption d-md-block">
+                            <!-- removed class d-none -->
+                            <h5>B+B Reimagines</h5>
+                            <p><a href="#">See how we do it</a></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/hero-2a.jpg" alt="Second slide">
+                        <div class="carousel-caption d-md-block">
+                            <!-- removed class d-none -->
+                            <h5>B+B Gets you there</h5>
+                            <p><a href="#">See our impact</a></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/hero-3a.jpg" alt="Third slide">
+                        <div class="carousel-caption d-md-block">
+                            <!-- removed class d-none -->
+                            <h5>B+B Creates</h5>
+                            <p><a href="#">See what did</a></p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators"  role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row center-row-single bottom-margin-xl">
+        <div class="col-12">
+            <h2 class="upper">More than just branding</h2>
+            <p class="no-bottom-margin">We go beyond the scope of just helping you with your "brand." We take a holistic approach to defining who
+                you are, what you do and why do you do it.</p>
+        </div>
+    </div>
+
+    <div class="row center-row-single bottom-margin-xl">
+        <div class="col-12">
+            <div class="bb-tagline" data-duration="5">
+                <div class="bb-tagline__content">
+                    <span class="bb-tagline__content-text">
+                        <h2>We challenge you to work with us</h2>
+                    </span>
+                    <div class="bb-tagline__messages" width="">
+                        <div class="bb-tagline__message-container">
+                            <div class="bb-tagline__message">
+                                <span class="bb-tagline-message__inner">Launch A New Platform.</span>
+                            </div>
+                            <div class="bb-tagline__message-ghost">Launch A New Platform.</div>
+                        </div>
+                        <div class="bb-tagline__message-container">
+                            <div class="bb-tagline__message">
+                                <span class="bb-tagline-message__inner">Champion Growth Initiatives.</span>
+                            </div>
+                            <div class="bb-tagline__message-ghost">Champion Growth Initiatives.</div>
+                        </div>
+                        <div class="bb-tagline__message-container">
+                            <div class="bb-tagline__message">
+                                <span class="bb-tagline-message__inner">Craft A Lasting Brand.</span>
+                            </div>
+                            <div class="bb-tagline__message-ghost">Craft A Lasting Brand.</div>
+                        </div>
+                        <div class="bb-tagline__message-container">
+                            <div class="bb-tagline__message">
+                                <span class="bb-tagline-message__inner">Shake Up A Stagnant Industry.</span>
+                            </div>
+                            <div class="bb-tagline__message-ghost">Shake Up A Stagnant Industry.</div>
+                        </div>
+                        <div class="bb-tagline__message-container">
+                            <div class="bb-tagline__message">
+                                <span class="bb-tagline-message__inner">Do Something Special.</span>
+                            </div>
+                            <div class="bb-tagline__message-ghost">Do Something Special.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Block Hover -->
+    <div class="row no-gutters hover-block-row clearfix bottom-margin-xl">
+        <div class="col-sm-12 col-md-6">
+            <div class="bb-hover-block bb-hover-block--left">
+                <img src="img/launch-rollover2.png">
+                <a href="#">
+                    <div class="bb-hover-block__foreground" style="background-image: url(img/launch-foreground.jpg);"></div>
+                    <div class="bb-hover-block__content">
+                        <div class="bb-hover-block__content-inner">
+                            <h3 class="bb-hover-block__heading">A Leading Launch Partner</h3>
+                            <h6 class="bb-hover-block__subheading">For Successful New Ventures</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="bb-hover-block bb-hover-block--right">
+                <img src="img/launch-rollover-3.png">
+                <a href="#">
+                    <div class="bb-hover-block__foreground" style="background-image: url(img/agency-foreground-1024x683.jpg);"></div>
+                    <div class="bb-hover-block__content">
+                        <div class="bb-hover-block__content-inner">
+                            <h3 class="bb-hover-block__heading">An Accomplished Agency</h3>
+                            <h6 class="bb-hover-block__subheading">For Recognized &amp; Emerging Brands</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div> <!-- Block Hover -->
+
+    <div class="row center-row-single row-max bottom-margin-md">
+        <div class="col-12">
+            <header class="bb-logo-hdr">
+                <h2 class="upper bb-logo-headline">Our Work <strong>Gets Noticed</strong></h2>
+            </header>
+        </div>
+    </div>
+
+    <div class="row center-row-single row-max bottom-margin-xl">
+        <div class="owl-carousel">
+            <div class="bb-owl-carousel-item"><img src="img/owl/abc.png"></div>
+            <div class="bb-owl-carousel-item"><img src="img/owl/business-insider.png"></div>
+            <div class="bb-owl-carousel-item"><img src="img/owl/daily-news.png"></div>
+            <div class="bb-owl-carousel-item"><img src="img/owl/cnn.png"></div>
+            <div class="bb-owl-carousel-item"><img src="img/owl/buzzfeed.png"></div>
+            <div class="bb-owl-carousel-item"><img src="img/owl/cbs.png"></div>
+        </div>
+    </div>
+    
+    <footer class="global-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <span class="global-footer__address">651.442.0980<br />
+                    5790 Newberry Avenue North<br />
+                    Stillwater, MN 55082
+                </div>
+                <div class="col-sm-12 col-md-6 global-footer__right">
+                    <ul>
+                        <li><i class="fab fa-linkedin"></i></li>
+                        <li><i class="fab fa-twitter"></i></li>
+                        <li><i class="fab fa-facebook"></i></li>
+                    </ul>
+                    <p class="upper">Blair Branding LLC | COPYRIGHT &copy;2019</p>
+                    <p><a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></p>
+                </div>    
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script type="text/javascript" src="js/tagline.js"></script>
+<script type="text/javascript" src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        dots: false,
+        responsive: {
+            0 : {
+                items: 2
+            },
+            480 : {
+                items: 3
+            },
+            992 : {
+                items: 5
+            }
+        }
+    });
+});
+</script>
 </body>
 </html>
