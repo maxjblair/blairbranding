@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,10 +18,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- Font Awesome -->
-    <link href="node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+    <link href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=B612&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass+Mono&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/styles.min.css" rel="stylesheet">
 
     <title>Blair Branding</title>
 
@@ -203,12 +206,12 @@
 
     <div class="row center-row-single row-max bottom-margin-xl">
         <div class="owl-carousel">
-            <div class="bb-owl-carousel-item"><img src="img/owl/Business-Insider.png"></div>
-            <div class="bb-owl-carousel-item"><img src="img/owl/DAILY-NEWS.png"></div>
             <div class="bb-owl-carousel-item"><img src="img/owl/abc.png"></div>
-            <div class="bb-owl-carousel-item"><img src="img/owl/CNN.png"></div>
-            <div class="bb-owl-carousel-item"><img src="img/owl/BuzzFeed.png"></div>
-            <div class="bb-owl-carousel-item"><img src="img/owl/CBS.png"></div>
+            <div class="bb-owl-carousel-item"><img src="img/owl/business-insider.png"></div>
+            <div class="bb-owl-carousel-item"><img src="img/owl/daily-news.png"></div>
+            <div class="bb-owl-carousel-item"><img src="img/owl/cnn.png"></div>
+            <div class="bb-owl-carousel-item"><img src="img/owl/buzzfeed.png"></div>
+            <div class="bb-owl-carousel-item"><img src="img/owl/cbs.png"></div>
         </div>
     </div>
     
@@ -234,9 +237,11 @@
     </footer>
 </div>
 
-<script type="text/javascript" src="js/tagline.js"></script>
-<script type="text/javascript" src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
-<script>
+
+<!-- Custom JS -->
+<script type="text/javascript" src="js/bundle-min.js"></script>
+
+<script type="text/javascript">
 $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
         loop:true,
